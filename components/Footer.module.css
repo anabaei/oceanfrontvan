@@ -1,0 +1,24 @@
+/* components/Footer.module.css */
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    font-size: 1.5em;
+    margin-left: 10px;
+    color: #007bff;
+  }
+  
+  .icon:hover {
+    color: #0056b3;
+  }
+  

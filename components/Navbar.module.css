@@ -1,0 +1,31 @@
+/* components/Navbar.module.css */
+.navbar {
+    background-color: #f8f9fa;
+    padding-left: 2%;
+    text-decoration: none; /* Bright background color */
+  }
+  
+  .brand {
+    font-size: 1.5em;
+    color: #007bff; /* Brand color */
+    text-decoration: none;
+  }
+  
+  .navLink {
+    color: #007bff; /* Link color */
+  }
+  
+  .navLink:hover {
+    color: #0056b3;
+    font-size: larger; /* Hover color */
+  }
+  
+  .navList {
+    padding: 0;
+    @media (max-width: 767px) {
+      /* Adjust styling for smaller screens */
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  
