@@ -5,17 +5,31 @@ import styles from './Navbar.module.css';
 export default function Navbar() {
   return (
     <nav className={`navbar navbar-expand-lg navbar-light ${styles.navbar}`}>
-      <div className="container d-flex justify-content-between align-items-center">
+      <div className="container">
         <Link href="/">
           <div className="navbar-brand">
             {/* Sample logo (replace with your actual logo) */}
             <img src="/logo.png" alt="Logo" className={styles.logo} />
-            
           </div>
         </Link>
-        <div>
-          <ul className="navbar-nav">
-          <li className="nav-item">
+
+        {/* Navbar toggler button for mobile */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Collapsible content for mobile */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
               <Link href="/">
                 <div className="nav-link">Home</div>
               </Link>

@@ -17,7 +17,7 @@ const Page = () => {
           textAlign: 'center',
         }}
       >
-        <h1 style={{color: 'black', fontSize: '67px'}}>OceanFron Contractors</h1>
+        <h1 style={{color: 'black', fontSize: '67px'}}>OceanFront Contractors</h1>
       </div>
     </Layout>
   );
