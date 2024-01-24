@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <img src="/logo.png" alt="Logo" className={styles.logo} />
+            <img src="/of.png" alt="Logo" className={styles.logo} />
           </div>
           <div className="col-12 col-md-6">
             <div className="text-md-right">

@@ -9,7 +9,9 @@ export default function Navbar() {
         <Link href="/">
           <div className="navbar-brand">
             {/* Sample logo (replace with your actual logo) */}
-            <img src="/logo.png" alt="Logo" className={styles.logo} />
+            
+            <img src="/of.png" alt="Logo" style={{ maxHeight: '50px'}} />
+         
           </div>
         </Link>
 
