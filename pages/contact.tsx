@@ -16,20 +16,20 @@ const ContactForm = () => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value, type } = e.target;
 
     // Handle checkbox separately
-    if (type === "checkbox") {
-      setFormData({
-        ...formData,
-        [name]: checked,
-      });
-    } else {
+    // if (type === "checkbox") {
+    //   setFormData({
+    //     ...formData,
+    //     [name]: checked,
+    //   });
+    // } else {
       setFormData({
         ...formData,
         [name]: value,
       });
-    }
+  
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -122,7 +122,7 @@ const ContactForm = () => {
               className="form-control"
             />
           </div>
-          <div className="mb-3 form-check">
+          {/* <div className="mb-3 form-check">
             <input
               type="checkbox"
               id="receiveUpdates"
@@ -134,7 +134,7 @@ const ContactForm = () => {
             <label htmlFor="receiveUpdates" className="form-check-label">
               Receive Updates
             </label>
-          </div>
+          </div> */}
           <div className="mb-3">
             <label className="form-label">Inquiry Type:</label>
             <div className="form-check">
