@@ -41,17 +41,17 @@ const Navbar: React.FC<NavbarProps> = ({ title }) => {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link href="/">
-                <div className="nav-link">Home</div>
+                <div className="nav-link navLink">Home</div>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/about">
-                <div className="nav-link">About</div>
+                <div className="nav-link navLink">About</div>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/contact">
-                <div className="nav-link">Contact Us</div>
+                <div className="nav-link navLink">Contact Us</div>
               </Link>
             </li>
           </ul>

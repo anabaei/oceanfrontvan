@@ -12,11 +12,11 @@
   }
   
   .navLink {
-    color: #007bff; /* Link color */
+    color: #02162c; /* Link color */
   }
   
   .navLink:hover {
-    color: #0056b3;
+    color: #08438c;
     font-size: larger; /* Hover color */
   }
   
