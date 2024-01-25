@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ title }) => {
     <nav className={`navbar navbar-expand-lg navbar-light ${styles.navbar}`}>
       <div className="container">
         <Link href="/">
-          <div className="navbar-brand">
+          <div className="navbar-brand">{title}
           <img src="/of.png" alt="Logo" style={{ maxHeight: '50px'}} />
           </div>
         </Link>

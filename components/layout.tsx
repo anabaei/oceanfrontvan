@@ -10,7 +10,7 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <div>
-      <Navbar />
+      <Navbar title=''/>
       <main>
         {children}
       </main>
