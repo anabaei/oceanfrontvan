@@ -28,13 +28,13 @@ const aboutData = [
 const projectData = [
   {
     id: 1,
-    title: 'Web Development',
+    title: 'Lorem ipsum',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     icon: <BiCodeAlt />,
   },
   {
     id: 2,
-    title: 'Global Presence',
+    title: 'd minim veniam',
     description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     icon: <BiWorld />,
   },

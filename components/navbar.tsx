@@ -1,35 +1,43 @@
 // components/Navbar.tsx
+import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './Navbar.module.css';
 
-export default function Navbar() {
+interface NavbarProps {
+  title: string;
+}
+
+// this part helps to display colapse
+const Navbar: React.FC<NavbarProps> = ({ title }) => {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavToggle = () => {
+    setIsNavCollapsed(!isNavCollapsed);
+  };
+
   return (
     <nav className={`navbar navbar-expand-lg navbar-light ${styles.navbar}`}>
       <div className="container">
         <Link href="/">
           <div className="navbar-brand">
-            {/* Sample logo (replace with your actual logo) */}
-            
-            <img src="/of.png" alt="Logo" style={{ maxHeight: '50px'}} />
-         
+          <img src="/of.png" alt="Logo" style={{ maxHeight: '50px'}} />
           </div>
         </Link>
 
-        {/* Navbar toggler button for mobile */}
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler ${isNavCollapsed ? '' : 'collapsed'}`}
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={!isNavCollapsed}
           aria-label="Toggle navigation"
+          onClick={handleNavToggle}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Collapsible content for mobile */}
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className={`collapse navbar-collapse ${isNavCollapsed ? '' : 'show'}`} id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link href="/">
@@ -51,4 +59,6 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;
